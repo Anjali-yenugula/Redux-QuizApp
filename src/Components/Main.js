@@ -19,25 +19,19 @@ class Main extends Component {
         return (
             <Container>
             <Quiz />
-        <Card style={{ margin: "4% auto", padding: "15px", textAlign: "center", height: "80%", width: "60%",}}>
-        {count <= questions?.length - 1 ?
-                        (<div>
-                        <Questions/>
-        {/* <h2 style={{height:"150px"}}>{questions[count]}</h2> */}
-        <Options/>
-                        
-                            {selectedAnswers[count] &&
-                                <Button variant="contained" color="primary" onClick={() => { this.props.nextQuestion() }}>NEXT</Button>}
-                        </div>
-                        ) : (
-                            <div>
-                            <Score />
-
-                            </div>
-                        )
-                    }
-                </Card>
+            <Card style={{ margin: "4% auto", padding: "15px", textAlign: "center", height: "80%", width: "60%",}}>
+            {count <= questions?.length - 1 ?
+            (<div>
+                <Questions/>
+                <Options/>
+            {selectedAnswers[count] && <Button variant="contained" color="primary" 
+            onClick={() => { this.props.nextQuestion() }}>NEXT</Button>}
+             </div>) : (<div>
+                <Score />
+                </div>)}
+            </Card>
             </Container>
+        
 
         )
     }

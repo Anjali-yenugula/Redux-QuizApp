@@ -9,8 +9,8 @@ const Options=(props)=>{
     return (
         <div >
          {options[count]?.map((option) => (
-                                <p className="option" onClick={() =>props.checkAnswer(option)}>{option}</p>
-                            ))}
+            <p className="option" onClick={() =>props.checkAnswer(option)}>{option}</p>
+        ))}
         </div>
     );
 

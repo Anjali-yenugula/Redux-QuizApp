@@ -6,9 +6,8 @@ import {playAgain} from "../Actions/actions";
 
 const Score = (props) => {
    return (
-       <div>
+    <div>
     <h1> You scored {props.score}/10</h1>
-  
     <Button variant="contained" color="secondary" onClick={()=>{props.playAgain()}}>Play Again</Button>
     </div>
    )

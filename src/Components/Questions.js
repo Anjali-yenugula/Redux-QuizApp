@@ -7,7 +7,7 @@ const Questions = (props) => {
     let {count,questions} = props
     return (
         <div>
-            <h2 style={{height:"150px"}}>{questions[count]}</h2>
+        <h2 style={{height:"150px"}}>{questions[count]}</h2>
         </div>
     )
 }
