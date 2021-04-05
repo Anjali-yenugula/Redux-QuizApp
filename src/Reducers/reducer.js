@@ -47,13 +47,13 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 selectedAnswers: [...state.selectedAnswers, payload.selectedAnswer],
             };
-               case PLAY_AGAIN:
-                    return{
-                        ...state,
-                        count: 0,
-                        score: 0
+        case PLAY_AGAIN:
+            return{
+                ...state,
+                count: 0,
+                score: 0
 
-                    }
+            };
 
         default :
             return state;
