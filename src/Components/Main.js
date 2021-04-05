@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{Component} from 'react'
 import { connect } from "react-redux";
 import { loadData, nextQuestion, checkAnswer ,playAgain} from "../Actions/actions";
 import Score from "./Score"
@@ -7,7 +7,7 @@ import Options from "./Options"
 import Questions from "./Questions"
 import { Button, Card, Container} from '@material-ui/core';
 
-class Main extends React.Component {
+class Main extends Component {
     componentDidMount() {
         this.props.loadData()
     }
