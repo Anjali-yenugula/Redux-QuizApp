@@ -51,7 +51,8 @@ const reducer = (state = initialState, action) => {
             return{
                 ...state,
                 count: 0,
-                score: 0
+                score: 0,
+                selectedAnswers:[]
 
             };
 
