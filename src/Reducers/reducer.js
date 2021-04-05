@@ -50,10 +50,12 @@ const reducer = (state = initialState, action) => {
                case PLAY_AGAIN:
                     return{
                         ...state,
-                        count:0
+                        count: 0,
+                        score: 0
+
                     }
 
-        default:
+        default :
             return state;
 
     }
