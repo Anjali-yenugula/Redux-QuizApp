@@ -3,7 +3,7 @@ import { LOAD_DATA, NEXT_QUESTION, CHECK_ANSWER ,PLAY_AGAIN} from "./constants"
 
 export const loadData = () => {
     return (dispatch) => {
-        fetch('http://11d5354086d5.ngrok.io/data')
+        fetch('http://6c481b5a1db9.ngrok.io/data')
             .then(res => res.json())
             .then(data => {
                 let {
